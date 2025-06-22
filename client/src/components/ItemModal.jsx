@@ -6,7 +6,7 @@ import { X, Mail } from 'lucide-react';
 function ItemModal({ item, onClose }) {
   const handleEnquire = async () => {
     try {
-      await axios.post('http://localhost:5000/api/items/enquire', {
+      await axios.post('https://amrr-assigment.onrender.com/api/items/enquire', {
         itemName: item.name,
       });
       alert('Enquiry sent successfully');

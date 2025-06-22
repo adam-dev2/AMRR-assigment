@@ -24,7 +24,7 @@ function AddItem() {
     }
 
     try {
-      const res = await axios.post('http://localhost:5000/api/items/add', data);
+      const res = await axios.post('https://amrr-assigment.onrender.com/api/items/add', data);
       setSuccess(res.data.message);
       setFormData({ name: '', type: '', description: '' });
       setCoverImage(null);

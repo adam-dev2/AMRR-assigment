@@ -18,7 +18,7 @@ function Carousel({ images }) {
         {images.map((img, idx) => (
           <div key={idx}>
             <img
-              src={`http://localhost:5000/${img}`}
+              src={`https://amrr-assigment.onrender.com/${img}`}
               alt={`Slide ${idx}`}
               className="w-full h-64 object-cover rounded"
             />

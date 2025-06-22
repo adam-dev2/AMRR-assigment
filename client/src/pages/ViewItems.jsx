@@ -8,7 +8,7 @@ function ViewItems() {
 
   useEffect(() => {
     axios
-      .get('http://localhost:5000/api/items')
+      .get('https://amrr-assigment.onrender.com/api/items')
       .then(res => setItems(res.data))
       .catch(err => console.error(err));
   }, []);
@@ -24,7 +24,7 @@ function ViewItems() {
             className="bg-[#161B22] border border-[#30363d] rounded-xl shadow hover:shadow-lg cursor-pointer transition"
           >
             <img
-              src={`http://localhost:5000/${item.coverImage}`}
+              src={`https://amrr-assigment.onrender.com/${item.coverImage}`}
               alt={item.name}
               className="w-full h-48 object-cover rounded-t-xl"
             />
